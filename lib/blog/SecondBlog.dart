@@ -21,51 +21,7 @@ class SecondBlog extends StatelessWidget {
       body: SingleChildScrollView(
         child: Wrap(
           children: [
-            Center(
-                child:Container(
-                  padding: const EdgeInsets.all(20),
-                  child: Align(
-                    alignment: const Alignment(0.9,-1),
-                    child : Column(
-                      children: [
-                        SizedBox(
-                          width: 500,
-                          height: 100,
-                          child: Row(
-                            children: [
-                              TextButton(
-                              child: Text('Home', style: GoogleFonts.roboto(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
-                              onPressed: ()=>
-                                Navigator.pushNamed(context, '/'),
-                              ),
-                              const Spacer(),
-                              TextButton(
-                              child: Text('Blog', style: GoogleFonts.roboto(fontSize: 20, color: Colors.black,fontWeight: FontWeight.w300),),
-                              onPressed: ()=> 
-                                Navigator.pushNamed(context, '/blog'),
-                              ),
-                              const Spacer(),
-                              TextButton(
-                              child: Text('About', style: GoogleFonts.roboto(fontSize: 20, color: Colors.black,fontWeight: FontWeight.w300),),
-                              onPressed: ()=>  
-                                Navigator.pushNamed(context, '/about'),
-                              ),
-                              const Spacer(),
-                              TextButton(
-                              child: Text('Contact', style: GoogleFonts.roboto(fontSize: 20, color: Colors.black,fontWeight: FontWeight.w300),),
-                              onPressed: ()=>  
-                                Navigator.pushNamed(context, '/contact'),
-                              ),
-                            ],)
-                            ),
-                            
-                      ],
-                    ),          
-                    )
-                  
-                )
-              
-            ),
+            Header(),
             Center(
               child: Wrap(
                 alignment: WrapAlignment.center,
@@ -119,7 +75,7 @@ class SecondBlog extends StatelessWidget {
                           ),
                       const Image(
                           image:  AssetImage(
-                            "assets/anhsecondblog1.jpg",
+                            "assets/imgBlog/secondBlog/anhsecondblog1.jpg",
                             ),
                             width: 600,
                             height: 300,
@@ -135,7 +91,7 @@ class SecondBlog extends StatelessWidget {
                           ),
                       const Image(
                           image:  AssetImage(
-                            "assets/anhsecondblog2.png",
+                            "assets/imgBlog/secondBlog/anhsecondblog2.png",
                             ),
                             width: 600,
                             height: 300,
@@ -147,7 +103,7 @@ class SecondBlog extends StatelessWidget {
                           ),
                       const Image(
                           image:  AssetImage(
-                            "assets/anhsecondblog3.png",
+                            "assets/imgBlog/secondBlog/anhsecondblog3.png",
                             ),
                             width: 600,
                             height: 300,
@@ -163,7 +119,7 @@ class SecondBlog extends StatelessWidget {
                           ),
                       const Image(
                           image:  AssetImage(
-                            "assets/anhsecondblog4.png",
+                            "assets/imgBlog/secondBlog/anhsecondblog4.png",
                             ),
                             width: 600,
                             height: 300,
@@ -175,7 +131,7 @@ class SecondBlog extends StatelessWidget {
                           ),
                       const Image(
                           image:  AssetImage(
-                            "assets/anhsecondblog5.png",
+                            "assets/imgBlog/secondBlog/anhsecondblog5.png",
                             ),
                             width: 600,
                             height: 300,
@@ -183,7 +139,7 @@ class SecondBlog extends StatelessWidget {
                             ),
                       const Image(
                           image:  AssetImage(
-                            "assets/anhsecondblog6.png",
+                            "assets/imgBlog/secondBlog/anhsecondblog6.png",
                             ),
                             width: 400,
                             height: 100,
@@ -195,7 +151,7 @@ class SecondBlog extends StatelessWidget {
                           ),
                       const Image(
                           image:  AssetImage(
-                            "assets/anhsecondblog7.png",
+                            "assets/imgBlog/secondBlog/anhsecondblog7.png",
                             ),
                             width: 600,
                             height: 300,

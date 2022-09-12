@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:webflutter/navbar/Footer.dart';
+import 'package:webflutter/navbar/Header.dart';
 import 'package:webflutter/router/RoutesName.dart';
 
 
@@ -19,51 +20,7 @@ class _BlogPageState extends State<BlogPage> {
       body: SingleChildScrollView(
         child: Wrap(
           children: [
-            Center(
-                child:Container(
-                  padding: const EdgeInsets.all(20),
-                  child: Align(
-                    alignment: const Alignment(0.9,-1),
-                    child : Column(
-                      children: [
-                        SizedBox(
-                          width: 500,
-                          height: 100,
-                          child: Row(
-                            children: [
-                              TextButton(
-                              child: Text('Home', style: GoogleFonts.roboto(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
-                              onPressed: ()=>
-                                 Navigator.pushNamed(context, RoutesName.HOME_PAGE)
-                              ),
-                              const Spacer(),
-                              TextButton(
-                              child: Text('Blog', style: GoogleFonts.roboto(fontSize: 20, color: Colors.black,fontWeight: FontWeight.w300),),
-                              onPressed: ()=> 
-                                Navigator.pushNamed(context, RoutesName.BLOG_PAGE)
-                              ),
-                              const Spacer(),
-                              TextButton(
-                              child: Text('About', style: GoogleFonts.roboto(fontSize: 20, color: Colors.black,fontWeight: FontWeight.w300),),
-                              onPressed: ()=>  
-                                Navigator.pushNamed(context, RoutesName.ABOUT_PAGE)
-                              ),
-                              const Spacer(),
-                              TextButton(
-                              child: Text('Contact', style: GoogleFonts.roboto(fontSize: 20, color: Colors.black,fontWeight: FontWeight.w300),),
-                              onPressed: ()=>  
-                               Navigator.pushNamed(context, RoutesName.CONTACT_PAGE)
-                              ),
-                            ],)
-                            ),
-                            
-                      ],
-                    ),          
-                    )
-                  
-                )
-              
-            ),
+            const Center(child: Header(),),
             Center(
               child: Container(
                 height: 500,
@@ -80,37 +37,43 @@ class _BlogPageState extends State<BlogPage> {
                   ]
                 ),
                 child: Container(
-                  height: 500,
-                  width: 1000,
                   margin: const EdgeInsets.only(left: 60),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      DefaultTextStyle (
-                        style: GoogleFonts.mali(fontSize: 40, color: Colors.black, fontWeight: FontWeight.w300),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text('Chào bạn!'),
-                            Text('Mình là Luân, đang là sinh viên năm 3 DNTU ', style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
-                            Text('Nếu bạn đã đến web này thì chúng ta có duyên đấy :D', style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
-                            
-                        ]),
-                      ),
-      
-                      const Align(
-                            alignment: Alignment.centerRight,
-                            child: CircleAvatar(
-                              backgroundImage: AssetImage("assets/anhblog.jpg"),
-                              radius: 100,
-                            )
+                  child: Center(
+                    child: Wrap(
+                      alignment: WrapAlignment.spaceBetween,
+                      direction: Axis.horizontal,
+                      runSpacing: 35,
+                      spacing: 100,
+                      children: [
+                         const Align(
+                              alignment: Alignment.center,
+                              child: CircleAvatar(
+                                backgroundImage: AssetImage("assets/imgPage/anhblog.jpg"),
+                                radius: 100,
+                              )
+                            ),
+                        Center(
+                          child: DefaultTextStyle (
+                            style: GoogleFonts.mali(fontSize: 40, color: Colors.black, fontWeight: FontWeight.w300),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text('Chào bạn!'),
+                                Text('Mình là Luân, đang là sinh viên năm 3 DNTU ', style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
+                                Text('Nếu bạn đã đến web này thì chúng ta có duyên đấy :D', style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
+                                
+                            ]),
                           ),
-                      Align(
-                          alignment: Alignment.bottomRight,
-                          child: DefaultTextStyle(
-                            style: GoogleFonts.mali(fontSize: 15, color: Colors.black, fontWeight: FontWeight.w300),
-                            child: const Text('Code by Flutter'))),
-                    ],
+                        ),
+                       
+                        
+                        Align(
+                            alignment: Alignment(0.9,-1),
+                            child: DefaultTextStyle(
+                              style: GoogleFonts.mali(fontSize: 15, color: Colors.black, fontWeight: FontWeight.w300),
+                              child: const Text('Code by Flutter'))),
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -130,7 +93,7 @@ class _BlogPageState extends State<BlogPage> {
                        child: Wrap(
                           children: [
                             Image(image: const AssetImage(
-                               "assets/anhfirstblog5.jpg",
+                               "assets/imgBlog/firstBlog/anhfirstblog5.jpg",
                             ),
                               width: 300,
                               height: 300,
@@ -144,7 +107,7 @@ class _BlogPageState extends State<BlogPage> {
                                     margin: EdgeInsets.all(10),
                                     child: DefaultTextStyle(
                                         style: const TextStyle(color: Colors.black,),
-                                        child: Text('Một ngày ở Sài Gòn', style: GoogleFonts.mali(fontSize: 23, color: Colors.black, fontWeight: FontWeight.w400),),
+                                        child: Text('Một ngày ở Sài Gòn', style: GoogleFonts.mali(fontSize: 23, color: Colors.black, fontWeight: FontWeight.w500),),
                                     ),
                                   ),
                                   DefaultTextStyle(
@@ -187,7 +150,7 @@ class _BlogPageState extends State<BlogPage> {
                                     margin: EdgeInsets.all(10),
                                     child: DefaultTextStyle(
                                         style: const TextStyle(color: Colors.black,),
-                                        child: Text('Hướng dẫn cài Flutter web', style: GoogleFonts.mali(fontSize: 23, color: Colors.black, fontWeight: FontWeight.w400),),
+                                        child: Text('Hướng dẫn cài Flutter web', style: GoogleFonts.mali(fontSize: 23, color: Colors.black, fontWeight: FontWeight.w500),),
                                     ),
                                   ),
                                   DefaultTextStyle(
@@ -217,7 +180,7 @@ class _BlogPageState extends State<BlogPage> {
                 ),
               ),
             )
-            ,Footer()
+            ,const Footer()
           ],
         ),
       ),

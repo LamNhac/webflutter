@@ -12,7 +12,7 @@ class Header extends StatelessWidget {
         Center(
                 child:Container(
                   width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height,
+                 
                   padding: const EdgeInsets.all(20),
                   child: Align(
                     alignment: const Alignment(0.9,-1),

@@ -16,51 +16,7 @@ class FirstBlog extends StatelessWidget {
       body: SingleChildScrollView(
         child: Wrap(
           children: [
-            Center(
-                child:Container(
-                  padding: const EdgeInsets.all(20),
-                  child: Align(
-                    alignment: const Alignment(0.9,-1),
-                    child : Column(
-                      children: [
-                        SizedBox(
-                          width: 500,
-                          height: 100,
-                          child: Row(
-                            children: [
-                              TextButton(
-                              child: Text('Home', style: GoogleFonts.roboto(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
-                              onPressed: ()=>
-                                Navigator.pushNamed(context, '/'),
-                              ),
-                              const Spacer(),
-                              TextButton(
-                              child: Text('Blog', style: GoogleFonts.roboto(fontSize: 20, color: Colors.black,fontWeight: FontWeight.w300),),
-                              onPressed: ()=> 
-                                Navigator.pushNamed(context, '/blog'),
-                              ),
-                              const Spacer(),
-                              TextButton(
-                              child: Text('About', style: GoogleFonts.roboto(fontSize: 20, color: Colors.black,fontWeight: FontWeight.w300),),
-                              onPressed: ()=>  
-                                Navigator.pushNamed(context, '/about'),
-                              ),
-                              const Spacer(),
-                              TextButton(
-                              child: Text('Contact', style: GoogleFonts.roboto(fontSize: 20, color: Colors.black,fontWeight: FontWeight.w300),),
-                              onPressed: ()=>  
-                                Navigator.pushNamed(context, '/contact'),
-                              ),
-                            ],)
-                            ),
-                            
-                      ],
-                    ),          
-                    )
-                  
-                )
-              
-            ),
+            Header(),
             Center(
               child: Wrap(
                 alignment: WrapAlignment.center,
@@ -95,35 +51,35 @@ class FirstBlog extends StatelessWidget {
                         style: GoogleFonts.mali(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w300),
                         child: Text("Các bạn cùng xem chúng mình có gì nhé!")),
                       const Image(image:  AssetImage(
-                                 "assets/anhfirstblog1.jpg",
+                                 "assets/imgBlog/firstBlog/anhfirstblog1.jpg",
                               ),
                                 width: 1000,
                                 height: 600,
                                 fit: BoxFit.fill,
                                 ),
                       const Image(image:  AssetImage(
-                                 "assets/anhfirstblog2.jpg",
+                                 "assets/imgBlog/firstBlog/anhfirstblog2.jpg",
                               ),
                                 width: 1000,
                                 height: 600,
                                 fit: BoxFit.fill,
                                 ),
                                 const Image(image:  AssetImage(
-                                 "assets/anhfirstblog3.jpg",
+                                 "assets/imgBlog/firstBlog/anhfirstblog3.jpg",
                               ),
                                 width: 1000,
                                 height: 600,
                                 fit: BoxFit.fill,
                                 ),
                                 const Image(image:  AssetImage(
-                                 "assets/anhfirstblog4.jpg",
+                                 "assets/imgBlog/firstBlog/anhfirstblog4.jpg",
                               ),
                                 width: 1000,
                                 height: 600,
                                 fit: BoxFit.fill,
                                 ),
                                 const Image(image:  AssetImage(
-                                 "assets/anhfirstblog5.jpg",
+                                 "assets/imgBlog/firstBlog/anhfirstblog5.jpg",
                               ),
                                 width: 1000,
                                 height: 600,

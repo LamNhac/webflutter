@@ -13,7 +13,7 @@ class LayoutBackground extends StatelessWidget {
     return Stack(
       children: [
         Image(image: const AssetImage(
-          "assets/background.jpg",
+          "assets/imgPage/background.jpg",
         ),
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
