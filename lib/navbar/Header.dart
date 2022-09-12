@@ -13,13 +13,13 @@ class Header extends StatelessWidget {
                 child:Container(
                   width: MediaQuery.of(context).size.width,
                  
-                  padding: const EdgeInsets.all(20),
+                  padding: const EdgeInsets.all(10),
                   child: Align(
                     alignment: const Alignment(0.9,-1),
                     child : Column(
                       children: [
                         SizedBox(
-                          width: 500,
+                          width: 400,
                           height: 100,
                           child: Row(
                             children: [

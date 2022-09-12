@@ -43,11 +43,14 @@ class HomePage extends StatelessWidget {
                     crossAxisAlignment: WrapCrossAlignment.center,
                     spacing: 50,
                     children: [
-                      Text('Chào mọi người ', style: GoogleFonts.mali(fontSize: 50, color: Color.fromARGB(255, 248, 243, 243), 
+                      Container(
+                        child: Text('Chào mọi người ', style: GoogleFonts.mali(fontSize: 30, color: Color.fromARGB(255, 248, 243, 243), 
                       fontWeight: FontWeight.w400,
+                      )
+                      
                     ),
                     ),
-                      Text('Blog của mình đây!', style: GoogleFonts.mali(fontSize: 40, color: Color.fromARGB(255, 248, 243, 243), fontWeight: FontWeight.w300),)
+                      Text('Blog của mình đây!', style: GoogleFonts.mali(fontSize: 30, color: Color.fromARGB(255, 248, 243, 243), fontWeight: FontWeight.w300),)
                     
                     ],
                   

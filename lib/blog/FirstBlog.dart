@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -17,25 +15,20 @@ class FirstBlog extends StatelessWidget {
         child: Wrap(
           children: [
             Header(),
+
             Center(
-              child: Wrap(
-                alignment: WrapAlignment.center,
-                crossAxisAlignment: WrapCrossAlignment.start,
-                direction: Axis.vertical,
-                children:[ 
-                  Center(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        DefaultTextStyle(
-                          style: GoogleFonts.mali(fontSize: 40, color: Colors.black, fontWeight: FontWeight.w400),
-                          child: Text("Một ngày ở Sài Gòn")),
-                        DefaultTextStyle(
-                          style: GoogleFonts.mali(fontSize: 15, color: Colors.black, fontWeight: FontWeight.w200),
-                          child: Text("29/5/2001")),
-                  ],),),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  DefaultTextStyle(
+                    style: GoogleFonts.mali(fontSize: 40, color: Colors.black, fontWeight: FontWeight.w400),
+                    child: Text("Một ngày ở Sài Gòn")),
+                  DefaultTextStyle(
+                    style: GoogleFonts.mali(fontSize: 15, color: Colors.black, fontWeight: FontWeight.w200),
+                    child: Text("29/5/2001")),
+            ],),),
                   
-                  Text(""),
+                  SizedBox(height: 100,),
                   Container(
                     padding: EdgeInsets.all(20),
                     width: 1000,
@@ -87,15 +80,16 @@ class FirstBlog extends StatelessWidget {
                                 ),
                     ]),
                   )
-                  ]
-                ),
-            ),
+                  
+                
+           
                
             
-            Footer()
-            
-        ],),
-      ),
+            ,Footer()
+            ]
+        ),
+        ),
+      
     );
   }
 }

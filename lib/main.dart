@@ -4,14 +4,14 @@ import 'package:url_strategy/url_strategy.dart';
 import 'package:webflutter/router/RouteGenerator.dart';
 import 'package:webflutter/router/RoutesName.dart';
 
-void main()async  {
+void main()  {
   WidgetsFlutterBinding.ensureInitialized;
-    await Firebase.initializeApp(
+  Firebase.initializeApp(
     options: const  FirebaseOptions(
       apiKey: "AIzaSyDahy02l8fcF4YZ5cKyn7kUxITMoKM8HBE", // Your apiKey
-      appId: "XXX", // Your appId
-      messagingSenderId: "XXX", // Your messagingSenderId
-      projectId: "XXX", // Your projectId
+      appId: "1:164234757143:web:6c4b78d2d9735c4e3d4852", // Your appId
+      messagingSenderId: "G-9YV3F0ZDVZ", // Your messagingSenderId
+      projectId: "blogndl", // Your projectId
     ),
   );
   setPathUrlStrategy();
