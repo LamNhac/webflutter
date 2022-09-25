@@ -82,156 +82,152 @@ class HomePage extends StatelessWidget {
                   ]
                 ),
                 child: Container(
-                  margin: const EdgeInsets.only(left: 60),
-                  child: Center(
-                    child: Wrap(
-                      alignment: WrapAlignment.spaceBetween,
-                      direction: Axis.horizontal,
-                      runSpacing: 35,
-                      spacing: 100,
+                  margin: const EdgeInsets.all(20),
+                  padding: const EdgeInsets.only(top: 60),
+                  width: double.infinity,
+                    child: Column(
                       children: [
-                         const Align(
-                              alignment: Alignment.center,
-                              child: CircleAvatar(
-                                backgroundImage: AssetImage("assets/imgPage/anhblog.jpg"),
-                                radius: 100,
-                              )
-                            ),
-                        Center(
-                          child: DefaultTextStyle (
-                            style: GoogleFonts.mali(fontSize: 40, color: Colors.black, fontWeight: FontWeight.w300),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text('Chào bạn!'),
-                                Text('Mình là Luân, đang là sinh viên năm 3 DNTU ', style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
-                                Text('Nếu bạn đã đến web này thì chúng ta có duyên đấy :D', style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
-                                
-                            ]),
-                          ),
+                        const CircleAvatar(
+                          backgroundImage: AssetImage("assets/imgPage/anhblog.jpg"),
+                          radius: 100,
+                        ),
+                        Column(
+                          children: [
+                          Text('Chào bạn!',style: GoogleFonts.mali(fontSize: 30, color: Colors.black, fontWeight: FontWeight.w400),),
+                          Text('Mình là Luân và đang là sinh viên năm 3 DNTU ', style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
+                          Text('Nếu bạn đã đến web này thì chúng ta có duyên đấy :D', style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
+                          ],
                         ),
                        
-                        
                         Align(
-                            alignment: Alignment(0.9,-1),
-                            child: DefaultTextStyle(
-                              style: GoogleFonts.mali(fontSize: 15, color: Colors.black, fontWeight: FontWeight.w300),
-                              child: const Text('Code by Flutter'))),
+                          alignment: Alignment.bottomRight,
+                          child: Text('Code by Flutter',style: GoogleFonts.mali(fontSize: 15, color: Colors.black, fontWeight: FontWeight.w300, fontStyle: FontStyle.italic),),
+                        ),
+
                       ],
                     ),
-                  ),
-                ),
-              ),
-            ),
-            const Divider(),
-            Center(
-              child: Wrap(
-                direction: Axis.horizontal,
-                children: [
-                  Column(
-                    children: [
-                      Container(
-                          margin: EdgeInsets.all(20),
-                          child: Text("ABOUT", style: GoogleFonts.mali(fontSize: 40, color: Colors.black, fontWeight: FontWeight.w500)),
-                          ),
-                      DefaultTextStyle(
-                        style: TextStyle(color: Colors.black),
-                        child: Column(
-                          children: [
-                            Container(
-                              margin: EdgeInsets.all(20),
-                              child: Wrap(
-                                direction: Axis.horizontal,
-                                alignment: WrapAlignment.spaceEvenly,
-                                children: [
-                                  Image(image: const AssetImage(
-                                  "assets/imgPage/anhabout.jpg",
-                                  ),
-                                  width: 500,
-                                  height: 500,
-                                  fit: BoxFit.cover,
-                                ),
-                                  Container(
-                                    margin: EdgeInsets.only(top:100,left: 100),
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text('Chào mọi người!', style: GoogleFonts.mali(fontSize: 30, color: Colors.black, fontWeight: FontWeight.w400)),
-                                        Text('Mình là Luân, đang sinh sống ở Biên Hòa và đang học ở DNTU', style: GoogleFonts.mali(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w300)),
-                                        Text('Mình đã bắt đầu thích đam mê máy tính hồi còn bé', style: GoogleFonts.mali(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w300)),
-                                        Text('và bây giờ mình đang trở thành 1 coder', style: GoogleFonts.mali(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w300))
-                                      ],
-                                    ),
-                                  ),
-                                
-                                ],
-                                
-                            ),)
-                          ],
-                      
-                        ),
-                      ),
-                      
-                  
-                  ],
-                ),
-              ],
-              ),
-            ),
-            const Divider(),
-            Center(
-              child: Column(
-              children: [
-                Column(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.all(20),
-                      child: Wrap(
-                        alignment: WrapAlignment.spaceEvenly,
-                        crossAxisAlignment: WrapCrossAlignment.center,
-                        children: [
-                          Image(image: const AssetImage(
-                            "assets/imgPage/anhcontact.jpg",
-                          ),
-                          width: 700,
-                          height: 700,
-                          fit: BoxFit.cover,
-                          ),
-                          Container(
-                            margin: EdgeInsets.only(left: 50,top: 50),
-                            child: DefaultTextStyle(
-                              style: GoogleFonts.mali(fontSize: 30, color: Colors.black, fontWeight: FontWeight.w600),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  
-                                  Text('CONTACT', style: GoogleFonts.mali(fontSize: 30, color: Colors.black, fontWeight: FontWeight.w600),),
-                                  Text('Email: ngodinhluan567@gmail.com', style: GoogleFonts.mali(fontSize: 23, color: Colors.black, fontWeight: FontWeight.w300),),
-                                  Text('Phone: +123456789', style: GoogleFonts.mali(fontSize: 23, color: Colors.black, fontWeight: FontWeight.w300),),
-                                  Text('Address: Dong Nai Province, Viet Nam', style: GoogleFonts.mali(fontSize: 23, color: Colors.black, fontWeight: FontWeight.w300),),
-                            
-                                ],
-                              ),
-                            ),
-                          ),
-        
-                          
-        
-                        ],
-                        
-        
                       ),
                     ),
-                  ],
+                  ),
+
+            const Divider(),
+
+            SizedBox(
+              width: double.infinity,
+              child: Column(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(20),
+                    child: Text("ABOUT", style: GoogleFonts.mali(fontSize: 40, color: Colors.black, fontWeight: FontWeight.w500,))),
+                  Container(
+                    padding: const EdgeInsets.all(20),
+                    child: Wrap(
+
+                      runAlignment : WrapAlignment.center,
+                      spacing: 50,
+                      runSpacing: 50,
+                        children: [
+                            
+                            const Image(
+                              image: AssetImage("assets/imgPage/anhabout.jpg",),
+                              width: 500,
+                              height: 500,
+                              fit: BoxFit.cover),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Chào mọi người!', style: GoogleFonts.mali(fontSize: 30, color: Colors.black, fontWeight: FontWeight.w400)),
+                                const SizedBox(
+                                  height: 30,
+                                ),
+                                Text('Mình là Luân, đang sinh sống ở Biên Hòa và đang học ở DNTU', style: GoogleFonts.mali(fontSize: 22, color: Colors.black, fontWeight: FontWeight.w300)),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Text('Mình đã đam mê máy tính và đang trở thành 1 coder', style: GoogleFonts.mali(fontSize: 22, color: Colors.black, fontWeight: FontWeight.w300)),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Text('Khi còn nhỏ mình đã bắt đầu tìm hiểu về ngôn ngữ lập trình', style: GoogleFonts.mali(fontSize: 22, color: Colors.black, fontWeight: FontWeight.w300)),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Text('Dần dần trở nên thích và có ý định theo muốn lập trình', style: GoogleFonts.mali(fontSize: 22, color: Colors.black, fontWeight: FontWeight.w300)),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Text('Mình đã trải qua và sử dụng 1 số framework như Flask, ASP.NET và React Native', style: GoogleFonts.mali(fontSize: 22, color: Colors.black, fontWeight: FontWeight.w300)),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Text('Trong lần tìm hiểu mobile thì mình đã biết Flutter và đang muốn phát triển Flutter', style: GoogleFonts.mali(fontSize: 22, color: Colors.black, fontWeight: FontWeight.w300)),
+                              ],
+                            )
+                            
+
+                          ],
+                        
+                     
+                      ),
+                  ),
+                ],
               ),
-          ],
-        ),
+            ),
+
+            const Divider(),
+            SizedBox(
+              width: double.infinity,
+              child: Column(
+                children: [
+                  Wrap(
+                    runAlignment: WrapAlignment.center,
+                    crossAxisAlignment: WrapCrossAlignment.center,
+
+                    children: [
+                       Container(
+                        padding: const EdgeInsets.all(20),
+                         child: const Image(
+                          image:  AssetImage("assets/imgPage/anhcontact.jpg",),
+                          width: 500,
+                          height: 500,
+                          fit: BoxFit.cover,
+                          ),
+                       ),
+                        Container(
+                          padding: const EdgeInsets.all(20),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              
+                              Text('CONTACT', style: GoogleFonts.mali(fontSize: 30, color: Colors.black, fontWeight: FontWeight.w600),),
+                              const SizedBox(
+                                height: 25,
+                              ),
+                              Text('Email: ngodinhluan567@gmail.com', style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
+                              Text('Phone: 0329924722', style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
+                              Text('Address: Khu phố 4B, Phường Trảng Dài, TP Biên Hòa, Tỉnh Đồng Nai', style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
+                      
+                            ],
+                          ),
+                        ),
+                      
+                  
+
+                      
+
+                              ],
+                              
+        
+                            ),
+                ],
+              ),
             ),
             const Footer(),
 
-           ],
-         ),
+           ]
+       
        )
-       );
+    )
+    );
   }
 }

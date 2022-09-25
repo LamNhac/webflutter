@@ -18,47 +18,52 @@ class ContactPage extends StatelessWidget {
           children: [
             const Center(
                 child: Header()),
-            Column(
-              children: [
-                Container(
-                  margin: EdgeInsets.all(20),
-                  child: Wrap(
-                    alignment: WrapAlignment.spaceEvenly,
+            SizedBox(
+              width: double.infinity,
+              child: Column(
+                children: [
+                  Wrap(
+                    runAlignment: WrapAlignment.center,
                     crossAxisAlignment: WrapCrossAlignment.center,
+
                     children: [
-                      Image(image: const AssetImage(
-                        "assets/imgPage/anhcontact.jpg",
-                      ),
-                      width: 700,
-                      height: 700,
-                      fit: BoxFit.cover,
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(left: 50,top: 50),
-                        child: DefaultTextStyle(
-                          style: GoogleFonts.mali(fontSize: 30, color: Colors.black, fontWeight: FontWeight.w600),
+                       Container(
+                        padding: const EdgeInsets.all(20),
+                         child: const Image(
+                          image:  AssetImage("assets/imgPage/anhcontact.jpg",),
+                          width: 600,
+                          height: 600,
+                          fit: BoxFit.cover,
+                          ),
+                       ),
+                        Container(
+                          padding: const EdgeInsets.all(20),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               
                               Text('CONTACT', style: GoogleFonts.mali(fontSize: 30, color: Colors.black, fontWeight: FontWeight.w600),),
-                              Text('Email: ngodinhluan567@gmail.com', style: GoogleFonts.mali(fontSize: 23, color: Colors.black, fontWeight: FontWeight.w300),),
-                              Text('Phone: +123456789', style: GoogleFonts.mali(fontSize: 23, color: Colors.black, fontWeight: FontWeight.w300),),
-                              Text('Address: Dong Nai Province, Viet Nam', style: GoogleFonts.mali(fontSize: 23, color: Colors.black, fontWeight: FontWeight.w300),),
-                        
+                              const SizedBox(
+                                height: 25,
+                              ),
+                              Text('Email: ngodinhluan567@gmail.com', style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
+                              Text('Phone: 0329924722', style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
+                              Text('Address: Khu phố 4B, Phường Trảng Dài, TP Biên Hòa, Tỉnh Đồng Nai', style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
+                      
                             ],
                           ),
                         ),
-                      ),
-      
                       
-      
-                    ],
-                    
-      
-                  ),
-                ),
-              ],
+                  
+
+                      
+
+                              ],
+                              
+        
+                            ),
+                ],
+              ),
             ),
             Footer()
           ],

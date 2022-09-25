@@ -37,47 +37,33 @@ class _BlogPageState extends State<BlogPage> {
                   ]
                 ),
                 child: Container(
-                  margin: const EdgeInsets.only(left: 60),
-                  child: Center(
-                    child: Wrap(
-                      alignment: WrapAlignment.spaceBetween,
-                      direction: Axis.horizontal,
-                      runSpacing: 35,
-                      spacing: 100,
+                  margin: const EdgeInsets.all(20),
+                  padding: const EdgeInsets.only(top: 60),
+                  width: double.infinity,
+                    child: Column(
                       children: [
-                         const Align(
-                              alignment: Alignment.center,
-                              child: CircleAvatar(
-                                backgroundImage: AssetImage("assets/imgPage/anhblog.jpg"),
-                                radius: 100,
-                              )
-                            ),
-                        Center(
-                          child: DefaultTextStyle (
-                            style: GoogleFonts.mali(fontSize: 40, color: Colors.black, fontWeight: FontWeight.w300),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text('Chào bạn!'),
-                                Text('Mình là Luân, đang là sinh viên năm 3 DNTU ', style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
-                                Text('Nếu bạn đã đến web này thì chúng ta có duyên đấy :D', style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
-                                
-                            ]),
-                          ),
+                        const CircleAvatar(
+                          backgroundImage: AssetImage("assets/imgPage/anhblog.jpg"),
+                          radius: 100,
+                        ),
+                        Column(
+                          children: [
+                          Text('Chào bạn!',style: GoogleFonts.mali(fontSize: 30, color: Colors.black, fontWeight: FontWeight.w400),),
+                          Text('Mình là Luân và đang là sinh viên năm 3 DNTU ', style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
+                          Text('Nếu bạn đã đến web này thì chúng ta có duyên đấy :D', style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),),
+                          ],
                         ),
                        
-                        
                         Align(
-                            alignment: Alignment(0.9,-1),
-                            child: DefaultTextStyle(
-                              style: GoogleFonts.mali(fontSize: 15, color: Colors.black, fontWeight: FontWeight.w300),
-                              child: const Text('Code by Flutter'))),
+                          alignment: Alignment.bottomRight,
+                          child: Text('Code by Flutter',style: GoogleFonts.mali(fontSize: 15, color: Colors.black, fontWeight: FontWeight.w300, fontStyle: FontStyle.italic),),
+                        ),
+
                       ],
                     ),
+                      ),
+                    ),
                   ),
-                ),
-              ),
-            ),
             const Divider(),
             Center(
               child: Container(
