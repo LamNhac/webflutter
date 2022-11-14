@@ -26,59 +26,61 @@ class FirstBlog extends StatelessWidget {
                   DefaultTextStyle(
                     style: GoogleFonts.mali(fontSize: 15, color: Colors.black, fontWeight: FontWeight.w200),
                     child: Text("29/5/2001")),
-            ],),),
+                  ],),),
                   
                   SizedBox(height: 100,),
-                  Container(
-                    padding: EdgeInsets.all(20),
-                    width: 1000,
-                    child: Wrap(
-                      crossAxisAlignment: WrapCrossAlignment.start,
-                      runSpacing: 30,
-                      spacing: 10,
-                      children: [
-                      DefaultTextStyle(
-                        style: GoogleFonts.mali(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w300),
-                        child: Text("Mình với bạn mình có đi chơi ở Thảo Cầm Viên và vòng quanh một số nơi")),
-                      DefaultTextStyle(
-                        style: GoogleFonts.mali(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w300),
-                        child: Text("Các bạn cùng xem chúng mình có gì nhé!")),
-                      const Image(image:  AssetImage(
-                                 "assets/imgBlog/firstBlog/anhfirstblog1.jpg",
-                              ),
-                                width: 1000,
-                                height: 600,
-                                fit: BoxFit.fill,
+                  Center(
+                    child: Container(
+                      padding: EdgeInsets.all(20),
+                      width: 1000,
+                      child: Wrap(
+                        crossAxisAlignment: WrapCrossAlignment.start,
+                        runSpacing: 30,
+                        spacing: 10,
+                        children: [
+                        DefaultTextStyle(
+                          style: GoogleFonts.mali(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w300),
+                          child: Text("Mình với bạn mình có đi chơi ở Thảo Cầm Viên và vòng quanh một số nơi")),
+                        DefaultTextStyle(
+                          style: GoogleFonts.mali(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w300),
+                          child: Text("Các bạn cùng xem chúng mình có gì nhé!")),
+                        const Image(image:  AssetImage(
+                                   "assets/imgBlog/firstBlog/anhfirstblog1.jpg",
                                 ),
-                      const Image(image:  AssetImage(
-                                 "assets/imgBlog/firstBlog/anhfirstblog2.jpg",
-                              ),
-                                width: 1000,
-                                height: 600,
-                                fit: BoxFit.fill,
+                                  width: 1000,
+                                  height: 600,
+                                  fit: BoxFit.fill,
+                                  ),
+                        const Image(image:  AssetImage(
+                                   "assets/imgBlog/firstBlog/anhfirstblog2.jpg",
                                 ),
-                                const Image(image:  AssetImage(
-                                 "assets/imgBlog/firstBlog/anhfirstblog3.jpg",
-                              ),
-                                width: 1000,
-                                height: 600,
-                                fit: BoxFit.fill,
+                                  width: 1000,
+                                  height: 600,
+                                  fit: BoxFit.fill,
+                                  ),
+                                  const Image(image:  AssetImage(
+                                   "assets/imgBlog/firstBlog/anhfirstblog3.jpg",
                                 ),
-                                const Image(image:  AssetImage(
-                                 "assets/imgBlog/firstBlog/anhfirstblog4.jpg",
-                              ),
-                                width: 1000,
-                                height: 600,
-                                fit: BoxFit.fill,
+                                  width: 1000,
+                                  height: 600,
+                                  fit: BoxFit.fill,
+                                  ),
+                                  const Image(image:  AssetImage(
+                                   "assets/imgBlog/firstBlog/anhfirstblog4.jpg",
                                 ),
-                                const Image(image:  AssetImage(
-                                 "assets/imgBlog/firstBlog/anhfirstblog5.jpg",
-                              ),
-                                width: 1000,
-                                height: 600,
-                                fit: BoxFit.fill,
+                                  width: 1000,
+                                  height: 600,
+                                  fit: BoxFit.fill,
+                                  ),
+                                  const Image(image:  AssetImage(
+                                   "assets/imgBlog/firstBlog/anhfirstblog5.jpg",
                                 ),
-                    ]),
+                                  width: 1000,
+                                  height: 600,
+                                  fit: BoxFit.fill,
+                                  ),
+                      ]),
+                    ),
                   )
                   
                 

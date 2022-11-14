@@ -21,34 +21,36 @@ class SecondBlog extends StatelessWidget {
       body: SingleChildScrollView(
         child: Wrap(
           runSpacing: 10,
-          children: [
+          children:  [
             Header(),
-
             Center(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   DefaultTextStyle(
                     style: GoogleFonts.mali(fontSize: 40, color: Colors.black, fontWeight: FontWeight.w400),
-                    child: Text("Hướng dẫn cài Flutter web")),
+                    child: Text("Hướng dẫn cài Flutter (web)")),
                   DefaultTextStyle(
                     style: GoogleFonts.mali(fontSize: 15, color: Colors.black, fontWeight: FontWeight.w200),
                     child: Text("29/5/2001")),
             ],),),
-            
-           
-              DefaultTextStyle(
+            SizedBox(width: 130,),
+            Center(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                              DefaultTextStyle(
                 style: GoogleFonts.mali(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w300),
                 child: Text("Trước khi cài thì mình sẽ nói là đây là 1 framework đa nền tảng.")),
               DefaultTextStyle(
                 style: GoogleFonts.mali(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w300),
                 child: Text("Nhưng bài viết lần này chỉ chú trọng vô web và sử dụng VSCode.")),
 
-                  DefaultTextStyle(
+              DefaultTextStyle(
                     style: GoogleFonts.mali(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w300,),
                     child: GestureDetector(child: Text("Đầu tiên bạn hãy tải SDK về từ trên Flutter web ",))
                       ),
-                  DefaultTextStyle(
+              DefaultTextStyle(
                 style: GoogleFonts.mali(fontSize: 25, color: Colors.blue, fontWeight: FontWeight.w300, decoration: TextDecoration.underline),
                 child: InkWell(child: Text("ở đây",),onTap: () => launchUrlString('https://docs.flutter.dev/get-started/install/windows'),)
                 ),
@@ -144,10 +146,10 @@ class SecondBlog extends StatelessWidget {
                     fit: BoxFit.fill,
                     ),
 
-                  DefaultTextStyle(
+              DefaultTextStyle(
                   style: GoogleFonts.mali(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w300),
                   child: Text("Nguồn: ",),),
-                DefaultTextStyle(
+              DefaultTextStyle(
                   style: GoogleFonts.mali(fontSize: 20, color: Colors.blue, fontWeight: FontWeight.w300,decoration: TextDecoration.underline),
                   child: InkWell(
                     child: Text("https://docs.flutter.dev/get-started/install/windows",),
@@ -158,9 +160,9 @@ class SecondBlog extends StatelessWidget {
                       ),
                       
 
-                 
-               
-            
+              ],
+            ),
+           ),
             Footer()
             
        ]
